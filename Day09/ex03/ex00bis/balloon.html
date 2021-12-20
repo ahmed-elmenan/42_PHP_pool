@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <style>
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="balloon"></div>
+    <script>
+        $(function () {
+            $("#balloon").click(function () {
+                switch ($('#balloon')[0].style.backgroundColor) {
+                    case 'red':
+                        $('#balloon')[0].style.backgroundColor = 'green';
+                        break;
+                    case 'green':
+                        $('#balloon')[0].style.backgroundColor = 'blue';
+                        break;
+                    case 'blue':
+                        $('#balloon')[0].style.backgroundColor = 'red';
+                        break;
+                    default:
+                        $('#balloon')[0].style.backgroundColor = 'green';
+                }
+                var width = parseInt($('#balloon')[0].style.width);
+                var size = !width ? 200 : width;
+                size += 10;
+                $('#balloon')[0].style.width = size + 'px';
+                $('#balloon')[0].style.height = size + 'px';
+                if (size > 420) {
+                    $('#balloon')[0].style.height = '200px';
+                    $('#balloon')[0].style.width = '200px';
+                }
+            })
+            $("#balloon").mouseleave(function () {
+                var size = parseInt($('#balloon')[0].style.width);
+                if (size >= 200) {
+                    $('#balloon')[0].style.width = size - 5 + 'px';
+                    $('#balloon')[0].style.height = size - 5 + 'px';
+                }
+                switch ($('#balloon')[0].style.backgroundColor) {
+                    case 'red':
+                        $('#balloon')[0].style.backgroundColor = 'blue';
+                        break;
+                    case 'green':
+                        $('#balloon')[0].style.backgroundColor = 'red';
+                        break;
+                    case 'blue':
+                        $('#balloon')[0].style.backgroundColor = 'green';
+                        break;
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

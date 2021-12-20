@@ -1,0 +1,58 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <input type="text" id="leftNumber">
+
+    <select id="opList">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+        <option>%</option>
+    </select>
+    <input type="text" id="rightNumber">
+    <br>
+    <input type="submit" value="Try me!" onclick="
+    var result;
+    var input1 = document.getElementById('leftNumber').value;
+    var input2 = document.getElementById('rightNumber').value;
+    var leftNumber = parseInt(document.getElementById('leftNumber').value);
+    var rightNumber = parseInt(document.getElementById('rightNumber').value);
+    var operator = document.getElementById('opList').value;  
+    if (!isNaN(input1) && !isNaN(input2) && leftNumber >= 0 && rightNumber >= 0 && parseFloat(input1) % 1 == 0 && parseFloat(input2) % 1 == 0) {
+        switch(operator) {
+            case '+':
+                result = leftNumber + rightNumber;
+                break;
+            case '-':
+                result = leftNumber - rightNumber;
+                break;
+            case '*':
+                result = leftNumber * rightNumber;
+                break;
+            case '/':
+                result = leftNumber / rightNumber;
+                break;
+            case '%':
+                result = leftNumber % rightNumber;
+                break;
+	    }
+        if (isNaN(result) || !isFinite(result))
+        {
+            alert('It’s over 9000!');
+            console.log('It’s over 9000!');
+        } else{
+            console.log(result);
+            alert(result)
+        }
+    } else {
+        alert('Error :(');
+    }
+   ">
+    <script>setInterval(function () { alert("Please, use me..."); }, 30000);</script>
+</body>
+
+</html>

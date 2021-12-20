@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<style>
+		#balloon {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="balloon" onclick="
+    var width = parseInt(document.getElementById('balloon').style.width);
+    var size = !width ? 200 : width;
+    size += 10;
+    switch(document.getElementById('balloon').style.backgroundColor) {
+			case 'red':
+  			document.getElementById('balloon').style.backgroundColor = 'green';
+    		break;
+  		case 'green':
+  			document.getElementById('balloon').style.backgroundColor = 'blue';
+    		break;
+  		case 'blue':
+  			document.getElementById('balloon').style.backgroundColor = 'red';
+				break;
+			default:
+				document.getElementById('balloon').style.backgroundColor = 'green';
+		}
+    document.getElementById('balloon').style.width = size + 'px';
+    document.getElementById('balloon').style.height = size + 'px';
+    if (size > 420)
+    {
+        document.getElementById('balloon').style.height = '200px';
+        document.getElementById('balloon').style.width = '200px';
+    }
+		"
+		onmouseleave= "
+		var size = parseInt(document.getElementById('balloon').style.width);
+		if (size >= 200)
+		{
+				document.getElementById('balloon').style.width = size - 5 + 'px';
+				document.getElementById('balloon').style.height = size - 5 + 'px';
+		}
+		switch(document.getElementById('balloon').style.backgroundColor) {
+			case 'red':
+  			document.getElementById('balloon').style.backgroundColor = 'blue';
+    		break;
+  		case 'green':
+  			document.getElementById('balloon').style.backgroundColor = 'red';
+    		break;
+  		case 'blue':
+  			document.getElementById('balloon').style.backgroundColor = 'green';
+				break;
+		}
+		">
+		</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    background-image: url("https://store-images.s-microsoft.com/image/apps.33325.14369444307494184.16fbe8f7-06c4-4e13-b0a2-3483175db1af.c33ff13e-f234-4a5e-9c9b-f1bc2e5dc479?mode=scale&q=90&h=1080&w=1920");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.red {
+    background-color: #f0a6be;
+}
+
+.light-brown {
+    background-color: #f2d9d1;
+}
+
+.brown {
+    background-color: #e6d8d1;
+}
+
+.brown {
+    background-color: #e6d8d1;
+}
+
+.orange {
+    background-color: #f7d9a6;
+}
+
+.light-purple {
+    background-color: #dddeee;
+}
+
+.green {
+    background-color: #d2e8d6;
+}
+
+.light-blue {
+    background-color: #bdd4ec;
+}
+
+.cyan {
+    background-color: #90d7f3;
+}
+
+.yellow {
+    background-color: #faf9db;
+}
+
+.outer-table {
+    width:90%;
+    margin:auto;
+}
+p{
+    margin: 0;
+}
+
+.purple {
+    background-color: #decce2;
+}
+
+.toHide {
+    visibility: hidden;
+}
+
+.inner-td-style {
+    text-align: center;
+}
+
+.empty-td {
+    vertical-align: top;
+    text-align: right;
+    font-size: 1vw;
+}
+
+
+.symbol {
+    font-size: 2vw;
+}
+
+.number {
+    text-align: right;
+    font-size: 1vw;
+}
+
+.atomic-weight {
+    text-align: left;
+    font-size: 1vw;
+}
+
+
+ 

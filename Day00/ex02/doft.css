@@ -1,0 +1,184 @@
+    body {
+        background-color: #505050;
+    }
+    
+    .sec1 {
+        box-shadow: 11px 10px 10px black;
+        border-radius: 10px;
+        position: relative;
+        width: 1240px;
+        height: 105px;
+        margin-left: 60px;
+    }
+    
+    .day-42 {
+        margin-left: 10px;
+        height: 85px;
+    }
+    
+    .reload {
+        height: 20;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    
+    .close {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    
+    .loupe {
+        position: absolute;
+        height: 122px;
+        right: 30px;
+        bottom: -20px;
+    }
+    
+    .part1 {
+        background-color: #909090;
+        margin-top: 20px;
+        height: 400px;
+        width: 120px;
+        border-radius: 10px;
+        box-shadow: 11px 10px 10px black;
+        position: absolute;
+        left: 90px;
+    }
+    
+    .part3 {
+        background-color: #909090;
+        margin-top: 20px;
+        height: 400px;
+        width: 120px;
+        border-radius: 10px;
+        box-shadow: 11px 10px 10px black;
+        position: absolute;
+        right: 75px;
+    }
+    
+    .part4 {
+        background-color: #46ff79;
+        box-shadow: 11px 10px 10px black;
+        padding-left: 10px;
+        width: 450px;
+        height: 130px;
+        position: absolute;
+        right: 50px;
+        border-radius: 10px;
+        top: 530px;
+        left: 50px;
+    }
+    
+    .line1 {
+        margin: 0;
+    }
+    
+    .span1 {
+        font-weight: 200px;
+        font-size: 30px;
+        font-family: serif;
+    }
+    
+    .span3 {
+        font-weight: 400;
+        font-style: italic;
+        font-family: sans-serif;
+        font-size: 15.5px;
+    }
+    
+    .span2 {
+        text-shadow: 4px 4px 4px red;
+    }
+    
+    .book {
+        height: 80px;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    
+    .towel {
+        height: 45px;
+        position: absolute;
+        top: 105px;
+        left: 40px;
+    }
+    
+    .brick {
+        height: 70px;
+        width: 102px;
+        background-image: url("resources/brick.jpg");
+        position: absolute;
+        top: 170px;
+        left: 10px;
+    }
+    
+    .arrow {
+        position: absolute;
+        height: 50px;
+        top: 15px;
+        left: 37px;
+    }
+    
+    .hand {
+        position: absolute;
+        height: 50px;
+        top: 88px;
+        left: 37px;
+    }
+    
+    .eye {
+        height: 50px;
+    }
+    
+    .settings {
+        position: absolute;
+        height: 50px;
+        top: 250px;
+        left: 37px;
+    }
+    
+    .chat {
+        position: absolute;
+        height: 50px;
+        top: 320px;
+        left: 37px;
+    }
+    
+    .img-container {
+        border-radius: 10px;
+        box-shadow: 11px 10px 10px black;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 20px;
+        position: absolute;
+        left: 232px;
+    }
+    
+    .img-container img {
+        width: 880px;
+        height: 550px;
+    }
+    
+    .sec2 {
+        position: relative;
+        width: 1350px;
+        height: 700px;
+    }
+    
+    p {
+        font-family: sans-serif;
+    }
+    
+    .eye-container {
+        height: 55px;
+        width: 55px;
+        border-radius: 10px;
+        border: solid 7px red;
+        position: absolute;
+        top: 160px;
+        left: 30px;
+        padding-left: 2px;
+    }
